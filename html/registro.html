@@ -1,28 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset='utf-8'>
-    <title>registro</title>
-    <link href="estilos.CSS" rel= "stylesheet" type="text/css"/>
-    <script type="text/javascript"  src='validaciones.js'></script>
-</head>
-<body>
-<div id="camposregistro">
-    <form id="form_registro_usuario">
-        <label for="in_usuario">Nombre de usuario:</label>
-        <input type="text" id="in_usuario" name="nombre de usario" required size="30">
-        <br>
-        <br>
-        <label for="in_contrasena">Constraseña:</label>
-        <input type="password" id="in_contrasena" name="constrasena" required size="15">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>login inicio seccion</title>
+    <script type="text/javascript" src="validaciones.js"></script>
+     <script type="text/javascript" src="array.js"></script>
+    <link rel="stylesheet" href="./stylo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+
+    </head>
+    <body>        
+    <form action="index.html" class="form-box animated fadeInUp">
+            <h1 class="form-title">Mision TIC 2022</h1>
+            <input type="text" name=""placeholder="Nombre" id="in_usuario" autofocus>
+            <input type="password" name=""placeholder="Contraseña" id="in_contrasena">
+            <input type="button" name="" value="Registrarse" onclick="agregarRegistro(), validar_nombreUsuario(), validar_contrasena(), filtrarPorContrasena()">      
     </form>
-</div>
-<br>
-<br>
-<div>
-    <a id="inicio" href="index.html">
-    <button type="button" id="btn_enviar_registro">Enviar</button>
-    </a>
-</div>
 </body>
 </html>
